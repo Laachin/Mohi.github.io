@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Homepage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Custom styling for the intro section */
+			#intro {
+				display: flex;
+				flex-direction: column; /* Stack content vertically */
+				align-items: center; /* Center items horizontally */
+				padding: 200px 20px;
+				text-align: center;
+				background-image: url('images/space.gif'); /* Background image */
+				background-size: cover; /* Ensures the image covers the entire section */
+				background-position: center; /* Centers the image */
+				background-repeat: no-repeat; /* Prevents tiling */
+				position: relative; /* For overlay */
+			}
+
+			#intro::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+				z-index: 1; /* Ensures content layers above the overlay */
+			}
+
+			#intro .profile-picture,
+			#intro .text {
+				position: relative; /* Ensures content is above the overlay */
+				z-index: 2;
+			}
+
+			#intro .profile-picture img {
+				border-radius: 50%; /* Makes the image round */
+				border: 3px solid #fff; /* Optional: Add a border around the image */
+				width: 200px; /* Adjust size as needed */
+				height: 200px; /* Match width for a perfect circle */
+				object-fit: cover; /* Ensures the image fits within the circle */
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+				margin-bottom: 20px; /* Space between image and text */
+			}
+
+			#intro .text h1 {
+				margin: 0;
+				font-size: 4em;
+				color: #fff;
+				text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Subtle text shadow */
+				margin-bottom: 10px; /* Space between image and text */
+			}
+
+			#intro .text p {
+				font-size: 1.2em;
+				color: #ddd;
+				text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+			}
+
+			/* Responsive behavior */
+			@media (max-width: 768px) {
+				#intro {
+					padding: 50px 10px;
+				}
+
+				#intro .text h1 {
+					font-size: 2em;
+				}
+
+				#intro .text p {
+					font-size: 1em;
+				}
+			}
+			#intro .icons a {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                border: 2px solid #ddd; /* Circle border color */
+                border-radius: 40%;
+                margin: 5px; /* Space between icons */
+                transition: all 0.3s ease; /* Smooth hover effect */
+            }
+            #intro .icons a:hover {
+                border-color: #6bf8ff1e; /* Change border color on hover */
+                background-color: #6dcfd41e; /* Add background color on hover */
+                color: #fff; /* Change icon color on hover */
+            }
+			.reduced-spacing {
+                line-height: 1.2; /* Adjust the value to control spacing */
+                margin-top: 0;    /* Optional: Reduce top margin */
+                margin-bottom: 0; /* Optional: Reduce bottom margin */
+            }
+			.image {
+        text-align: center; /* Center-aligns the content horizontally */
+    }
+			#footer .back-to-top-button {
+    background-color: #ffffff; /* Green background for the "Back on Top" button */
+  }
+
+  #footer .back-to-top-button:hover {
+            box-shadow: inset 0 0 0 2px #0f6e9e;
+			color: #f0f5f7 !important;
+			background-color: #0f6e9e;
+  }
+  @media (max-width: 480px) {
+        .responsive-image {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+        }
+    }
+	@media (max-width: 480px) {
+        .responsive-image2 {
+            height: 100%;
+            width: auto;
+            max-height: 230px;
+        }
+    }
+	@media (max-width: 480px) {
+        .responsive-image3 {
+            height: 100%;
+            width: auto;
+            max-height: 230px;
+        }
+    }
+			</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper" class="fade-in">
+
+			<!-- Intro -->
+			<div id="intro">
+				<div class="profile-picture">
+					<img src="images/ayo3.jpg" alt="My Photo" />
+				</div>
+				<div class="text">
+					<h1>Mohiuddin Ahmed</h1>
+					<p><i>|| &nbsp; Researcher, &nbsp; Learner, &nbsp; Collaborator &nbsp; ||</i></p>
+					<ul class="icons">
+						<li><a href="mailto:mohi.ahmed.abid@gmail.com" class="icon solid fa-envelope" target="_blank"><span class="label">Email</span></a></li>
+						<li><a href="https://linkedin.com/in/mohiuddinahmed86" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.researchgate.net/profile/Mohiuddin-Ahmed-15" class="icon brands fa-researchgate" target="_blank"><span class="label">Researchgate</span></a></li>
+						<li><a href="https://orcid.org/0009-0004-2023-5314" class="icon brands fa-orcid" target="_blank"><span class="label" >Orcid</span></a></li>
+						<li><a href="https://www.facebook.com/abid.ahmed.94009" class="icon brands fa-facebook-f" target="_blank"><span class="label" >Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/_laachin/" class="icon brands fa-instagram" target="_blank"><span class="label" >Instagram</span></a></li>
+						<li><a href="https://x.com/Laachin86?t=MHXXQYH3r4V8OOoJxjbXYw&s=09" class="icon brands fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul class="links">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="publications.html">Research&nbsp;&&nbsp;Publications</a></li>
+					<li><a href="experience.html">Experience</a></li>
+					<li><a href="affiliation.html">Affiliations</a></li>
+					<li><a href="awards.html">Honors</a></li>
+					<li><a href="test.html">Test&nbsp;Scores</a></li>
+					<li><a href="hobbies.html">Hobbies</a></li>
+				</ul>
+			</nav>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h3 class="reduced-spacing">Welcome to my</h3>
+									<h1>Portfolio</h1> </header>
+									<p style="text-align: center;">This is Mohiuddin Ahmed, commonly known as Abid.<br>I am a fresh Mechanical Engineering graduate 
+										from BUET. My undergrad research was centered on CFD, turbulence, combustion and shock-induced Aerodynamics. Driven by a passion for advancing my knowledge in these areas, 
+										I aim to expand my expertise and contribute meaningfully to the field. Currently, I am seeking Ph.D. opportunities, 
+										particularly, in the realm of CFD and compressible fluids in an esteemed institution. Have a look at 
+										my qualifications and academic credentials.</p>
+										<ul class="actions special">
+											<li><a href="https://drive.google.com/file/d/1PMykquApDSw8NK67coZfkM8_k2YzlK51/view?usp=sharing" class="button" target="_blank">My Academic Resume</a></li>
+										</ul>	
+								
+								
+							</section>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="education.html">Education</a></h2>
+									</header>
+									<a href="education.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/buet logo.png" alt="" style="height: 100%; width: auto; object-fit: contain;" /></a>
+									<p style="text-align: center;">I recently earned my Bachelor's degree in Mechanical Engineering from BUET, following my Higher Secondary education at Notre Dame College in Dhaka. </p>
+									<ul class="actions special">
+										<li><a href="education.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="projects.html">Projects</a></h2>
+									</header>
+									<a href="projects.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/fish3.png" class="responsive-image2" alt="" style="height: 100%; width: auto; object-fit: contain;" /></a>
+									<p style="text-align: center;">During my undergraduate studies, I worked on several projects, including the design and fabrication of a Heat-Exchanger and the modeling of a Nature-Inspired Robot.</p>
+									<ul class="actions special">
+										<li><a href="projects.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="publications.html">Research & Publications</a></h2>
+									</header>
+									<a href="publications.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/scramjet2.png" class="responsive-image3" alt="" style="height: 100%; width: auto;" /></a>
+									<p style="text-align: center;">I explored areas such as CFD, turbulence, non-reacting combustion in hypersonic scramjet combustors, and control strategies for thermal management as a part of my undergraduate thesis and coursework, with a few publications underway.</p>
+									<ul class="actions special">
+										<li><a href="publications.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="experience.html">Experience</a></h2>
+									</header>
+									<a href="experience.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/egcb3.jpg" alt="" style="width: 300px; height: 300px; object-fit: cover;" /></a>
+									<p style="text-align: center;">My industrial experience includes completing an internship at a renowned power generation company, where I explored the dynamic nature of power generation and its associated systems, and my participation in a day-long visit to another power plant.</p>
+									<ul class="actions special">
+										<li><a href="experience.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="affiliation.html">Affiliations</a></h2>
+									</header>
+									<a href="affiliation.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/imeche logo.png" alt="" /></a>
+									<p style="text-align: center;">Beyond my academic endeavors, I have actively participated in co-curricular activities, including involvement with IMechE and volunteering for Badhan, a blood donation organization.</p>
+									<ul class="actions special">
+										<li><a href="affiliation.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="awards.html">Honors and Awards</a></h2>
+									</header>
+									<a href="awards.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/cert2.jpg" alt="" style="height: 100%; width: auto; object-fit: contain;" /></a>
+									<p style="text-align: center;">Throughout my academic journey, I had the privilege of receiving honorariums from my university, college, and school in recognition of my academic achievements at these institutions.</p>
+									<ul class="actions special">
+										<li><a href="awards.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="test.html">Standardized Test Scores</a></h2>
+									</header>
+									<a href="test.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/idp logo.png" alt=""  /></a>
+									<p style="text-align: center;">I have taken the IELTS exam, an English proficiency test, and plan to undertake several other standardized tests as required.</p>
+									<ul class="actions special">
+										<li><a href="test.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="hobbies.html">Hobbies</a></h2>
+									</header>
+									<a href="hobbies.html" class="image fit" style="display: flex; justify-content: center; align-items: center; height: 300px;"><img src="images/spotify.png" alt="" style="height: 100%; width: auto; object-fit: contain;" /></a>
+									<p style="text-align: center;">In my pastime, I enjoy watching sports, learning about movies and filmography around the world, and listening to music.</p>
+									<ul class="actions special">
+										<li><a href="hobbies.html" class="button">Full Story</a></li>
+									</ul>
+								</article>
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<header>
+								<h2 align="center">Leave a Comment</h2>
+							</header>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="1"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							<ul class="actions special">
+								<li><a href="index.html" class="button back-to-top-button">Back on Top</a></li>
+							  </ul>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Mohiuddin Ahmed</li><li>Layout from: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
