@@ -19,11 +19,9 @@
 				background-position: center; /* Centers the image */
 				background-repeat: no-repeat; /* Prevents tiling */
 				position: relative; /* For overlay */
+				transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
 			}
-			#intro.gif-loaded {
-                background-image: url('images/space.gif'); /* Replace with the GIF */
-}
-
+			
 			#intro::before {
 				content: '';
 				position: absolute;
@@ -136,21 +134,19 @@
 			</style>
 			  <script>
 				document.addEventListener("DOMContentLoaded", () => {
+					// Select the intro section
 					const intro = document.getElementById("intro");
 		
-					// Set the initial placeholder image
-					intro.style.backgroundImage = "url('images/space2.PNG')";
-		
-					// Create a new Image object to load the GIF
+					// Create a new Image object for the GIF
 					const gif = new Image();
 					gif.src = "images/space.gif";
 		
-					// When the GIF is fully loaded, update the background
+					// Replace the placeholder with the GIF once it's fully loaded
 					gif.onload = () => {
 						intro.style.backgroundImage = `url('${gif.src}')`;
 					};
 		
-					// Handle potential errors (e.g., if the GIF fails to load)
+					// Optional: Log an error if the GIF fails to load
 					gif.onerror = () => {
 						console.error("Failed to load the GIF.");
 					};
