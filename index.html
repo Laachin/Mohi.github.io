@@ -140,6 +140,7 @@
 					const gif = new Image();
 					gif.src = "images/space.gif";
 					gif.onload = () => {
+						// Apply the class to change background once the GIF has loaded
 						intro.classList.add("gif-loaded");
 					};
 				});
@@ -293,27 +294,9 @@
 					<footer id="footer">
 						<section>
 							<header>
-								<h2 align="center">Leave a Comment</h2>
+								<h2 align="center">Thank you for your time. You're Amazing.</h2>
 							</header>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="1"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+							
 							<ul class="actions special">
 								<li><a href="index.html" class="button back-to-top-button">Back on Top</a></li>
 							  </ul>
