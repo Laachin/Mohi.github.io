@@ -134,14 +134,25 @@
         }
     }
 			</style>
-			<script>
+			  <script>
 				document.addEventListener("DOMContentLoaded", () => {
 					const intro = document.getElementById("intro");
+		
+					// Set the initial placeholder image
+					intro.style.backgroundImage = "url('images/space2.PNG')";
+		
+					// Create a new Image object to load the GIF
 					const gif = new Image();
 					gif.src = "images/space.gif";
+		
+					// When the GIF is fully loaded, update the background
 					gif.onload = () => {
-						// Apply the class to change background once the GIF has loaded
-						intro.classList.add("gif-loaded");
+						intro.style.backgroundImage = `url('${gif.src}')`;
+					};
+		
+					// Handle potential errors (e.g., if the GIF fails to load)
+					gif.onerror = () => {
+						console.error("Failed to load the GIF.");
 					};
 				});
 			</script>
